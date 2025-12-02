@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Key Lab - Drops exclusivos de camisetas de baloncesto pintadas a mano 1/1. Arte único y wearable.">
+    <meta name="keywords"
+        content="drops camisetas, basketball art, pintado a mano, edición limitada, streetwear exclusivo">
+    <meta name="author" content="Key Lab">
+
+    <meta property="og:title" content="Key Lab - Drops Exclusivos 1/1">
+    <meta property="og:description" content="Camisetas de baloncesto pintadas a mano. Cada pieza es única.">
+    <meta property="og:type" content="website">
+
+    <title>Key Lab - Drops Exclusivos</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">KEY LAB</a>
+            <ul class="nav-links">
+                <li><a href="index.html#drops">Drops</a></li>
+                <li><a href="3d.html">3D</a></li>
+                <li><a href="joyeria.html">Joyería</a></li>
+                <li><a href="cuadros.html">Cuadros</a></li>
+                <li><a href="portfolio.html">Web</a></li>
+                <li><a href="index.html#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section - Image Left (Flip), Text Right (Static) -->
+    <section class="hero" id="hero">
+        <div class="hero-container">
+            <!-- LEFT COLUMN: Flip Card for Image Only -->
+            <div class="flip-card" id="dropCard">
+                <div class="flip-card-inner">
+                    <!-- BACK SIDE - Mystery Card -->
+                    <div class="flip-card-back">
+                        <div class="mystery-card">
+                            <div class="card-pattern"></div>
+                            <div class="card-logo">KEY LAB</div>
+                            <div class="card-number">DROP #23</div>
+                            <div class="card-hint">
+                                <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                                    <circle cx="30" cy="30" r="28" stroke="currentColor" stroke-width="2" />
+                                    <path d="M30 10L35 20L47 20L38 27L42 38L30 31L18 38L22 27L13 20L25 20L30 10Z"
+                                        fill="currentColor" />
+                                </svg>
+                                <p>Click para revelar</p>
+                            </div>
+                            <div class="edition-badge">1/1 EDICIÓN ÚNICA</div>
+                        </div>
+                    </div>
+
+                    <!-- FRONT SIDE - Revealed Image (Kobe) -->
+                    <div class="flip-card-front">
+                        <div class="hero-image">
+                            <div class="hero-badge">1/1 EDICIÓN ÚNICA</div>
+                            <img src="images/drop23-kobe.png" alt="Drop #23 - Kobe Bryant Tribute"
+                                style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT COLUMN: Static Text Content (Always Visible) -->
+            <div class="hero-content">
+                <div class="drop-number">DROP #23</div>
+                <h1 class="hero-title">LEGENDS NEVER DIE</h1>
+                <p class="hero-subtitle">Camiseta oversized pintada a mano · Homenaje Kobe Bryant</p>
+
+                <div class="hero-tags">
+                    <span class="tag">🏀 BALONCESTO</span>
+                    <span class="tag">🎨 PINTADO A MANO</span>
+                    <span class="tag">⚡ ÚNICA PIEZA</span>
+                </div>
+
+                <div class="hero-price">
+                    <span class="price-label">Precio</span>
+                    <span class="price-value">90€</span>
+                </div>
+
+                <div class="hero-cta">
+                    <a href="#contacto" class="btn-primary">Conseguir Ahora</a>
+                    <a href="#gallery" class="btn-secondary">Ver Más Drops</a>
+                </div>
+
+                <div class="hero-availability">
+                    <div class="availability-dot"></div>
+                    <span>Disponible ahora · Entrega en 3-5 días</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-hint">
+            <span>Desliza para descubrir</span>
+            <div class="scroll-arrow">↓</div>
+        </div>
+    </section>
+
+    <!-- Value Proposition -->
+    <section class="value-props">
+        <div class="value-container">
+            <div class="value-item">
+                <div class="value-icon">🎨</div>
+                <h3>100% Único</h3>
+                <p>Cada pieza es una obra de arte original. No existen dos iguales.</p>
+            </div>
+            <div class="value-item">
+                <div class="value-icon">✋</div>
+                <h3>Artesanal</h3>
+                <p>Pintado completamente a mano con técnicas tradicionales y amor.</p>
+            </div>
+            <div class="value-item">
+                <div class="value-icon">⭐</div>
+                <h3>Edición Limitada</h3>
+                <p>Una vez vendido, desaparece para siempre. Exclusividad garantizada.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery - Últimos Drops (Carrusel) -->
+    <section class="gallery" id="gallery">
+        <div class="gallery-header">
+            <h2 class="section-title">Últimos Drops</h2>
+            <p class="section-subtitle">Colección de piezas únicas 1/1</p>
+        </div>
+
+        <div class="carousel-container">
+            <button class="carousel-btn prev" id="prevBtn" aria-label="Anterior">❮</button>
+
+            <div class="gallery-grid" id="dropsGrid">
+                <!-- Drop #22 - KiwiHoop -->
+                <div class="drop-card sold">
+                    <div class="drop-card-image">
+                        <div class="drop-status sold-out">VENDIDO</div>
+                        <img src="images/drop22-kiwihoop.png" alt="Drop #22 - KiwiHoop"
+                            style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="drop-card-info">
+                        <h3>KiwiHoop #22</h3>
+                        <p>Talla L · Blanco</p>
+                        <span class="drop-price">60€</span>
+                    </div>
+                </div>
+                <!-- Drop #21 - Sudadera Nike -->
+                <div class="drop-card sold">
+                    <div class="drop-card-image">
+                        <div class="drop-status sold-out">VENDIDO</div>
+                        <img src="images/drop21-sudadera-nike.jpg" alt="Drop #21 - Sudadera Nike"
+                            style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="drop-card-info">
+                        <h3>Swoosh Art #21</h3>
+                        <p>Talla M · Blanco</p>
+                        <span class="drop-price">70€</span>
+                    </div>
+                </div>
+
+                <!-- Drop #20 - Jordan -->
+                <div class="drop-card sold">
+                    <div class="drop-card-image">
+                        <div class="drop-status sold-out">VENDIDO</div>
+                        <img src="images/drop20-jordan.png" alt="Drop #20 - Jordan"
+                            style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="drop-card-info">
+                        <h3>Jordan #20</h3>
+                        <p>Talla L · Gris</p>
+                        <span class="drop-price">75€</span>
+                    </div>
+                </div>
+
+
+                <!-- Drop #19 - Zapatillas Flores -->
+                <div class="drop-card sold">
+                    <div class="drop-card-image">
+                        <div class="drop-status sold-out">VENDIDO</div>
+                        <img src="images/drop19-zapatillas-flores.png" alt="Drop #19 - Zapatillas Flores"
+                            style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="drop-card-info">
+                        <h3>Garden Dreams #19</h3>
+                        <p>Talla 39 · Negro</p>
+                        <span class="drop-price">65€</span>
+                    </div>
+                </div>
+
+                <!-- Drop #18 - Sudadera Ohana -->
+                <div class="drop-card sold">
+                    <div class="drop-card-image">
+                        <div class="drop-status sold-out">VENDIDO</div>
+                        <img src="images/drop18-sudadera-ohana.png" alt="Drop #18 - Sudadera Ohana"
+                            style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="drop-card-info">
+                        <h3>Ohana Stitch #18</h3>
+                        <p>Talla L · Azul Pastel</p>
+                        <span class="drop-price">60€</span>
+                    </div>
+                </div>
+
+                <!-- Drop #17 - Zoidberg Nike -->
+                <div class="drop-card sold">
+                    <div class="drop-card-image">
+                        <div class="drop-status sold-out">VENDIDO</div>
+                        <img src="images/drop17-zoidberg.jpg" alt="Drop #17 - Zoidberg Nike"
+                            style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="drop-card-info">
+                        <h3>Futurama Swoosh #17</h3>
+                        <p>Talla XL · Gris Oscuro</p>
+                        <span class="drop-price">35€</span>
+                    </div>
+                </div>
+
+                <!-- Drop #16 - LPGC YK -->
+                <div class="drop-card sold">
+                    <div class="drop-card-image">
+                        <div class="drop-status sold-out">VENDIDO</div>
+                        <img src="images/drop16-lpgc.png" alt="Drop #16 - LPGC YK"
+                            style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="drop-card-info">
+                        <h3>LPGC Vibes #16</h3>
+                        <p>Talla L · Blanco</p>
+                        <span class="drop-price">40€</span>
+                    </div>
+                </div>
+
+                <!-- Drop #15 - Grey Hoodie 154 -->
+                <div class="drop-card sold">
+                    <div class="drop-card-image">
+                        <div class="drop-status sold-out">VENDIDO</div>
+                        <img src="images/drop15-grey-hoodie.png" alt="Drop #15 - Grey Hoodie"
+                            style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="drop-card-info">
+                        <h3>Lion 154 #15</h3>
+                        <p>Talla M · Gris</p>
+                        <span class="drop-price">40€</span>
+                    </div>
+                </div>
+
+                <!-- Drop #14 - Hakuna Matata -->
+                <div class="drop-card sold">
+                    <div class="drop-card-image">
+                        <div class="drop-status sold-out">VENDIDO</div>
+                        <img src="images/drop14-hakuna.png" alt="Drop #14 - Hakuna Matata"
+                            style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="drop-card-info">
+                        <h3>Hakuna Matata #14</h3>
+                        <p>Talla L · Gris</p>
+                        <span class="drop-price">70€</span>
+                    </div>
+                </div>
+
+                <!-- Drop #13 - Zasko -->
+                <div class="drop-card sold">
+                    <div class="drop-card-image">
+                        <div class="drop-status sold-out">VENDIDO</div>
+                        <img src="images/drop13-zasko.png" alt="Drop #13 - Zasko"
+                            style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="drop-card-info">
+                        <h3>Zasko Master #13</h3>
+                        <p>Talla XL · Blanco</p>
+                        <span class="drop-price">40€</span>
+                    </div>
+                </div>
+
+
+                <!-- Drop #12 - Zapatillas Up -->
+                <div class="drop-card sold">
+                    <div class="drop-card-image">
+                        <div class="drop-status sold-out">VENDIDO</div>
+                        <img src="images/drop12-zapatillas-up.png" alt="Drop #12 - Zapatillas Up"
+                            style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="drop-card-info">
+                        <h3>Adventure Awaits #12</h3>
+                        <p>Talla 42 · Negro</p>
+                        <span class="drop-price">50€</span>
+                    </div>
+                </div>
+
+                <!-- Drop #11 - Campanilla -->
+                <div class="drop-card sold">
+                    <div class="drop-card-image">
+                        <div class="drop-status sold-out">VENDIDO</div>
+                        <img src="images/drop11-campanilla.png" alt="Drop #11 - Campanilla"
+                            style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="drop-card-info">
+                        <h3>Campanilla #11</h3>
+                        <p>Talla XL · Blanco</p>
+                        <span class="drop-price">100€</span>
+                    </div>
+                </div>
+
+                <!-- Drop #10 - Monster University -->
+                <div class="drop-card sold">
+                    <div class="drop-card-image">
+                        <div class="drop-status sold-out">VENDIDO</div>
+                        <img src="images/drop10-monsteruniversity.png" alt="Drop #10 - Monster University"
+                            style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="drop-card-info">
+                        <h3>Monster University #10</h3>
+                        <p>Talla XL · Blanco</p>
+                        <span class="drop-price">60€</span>
+                    </div>
+                </div>
+
+                <!-- Drop #9 - Zasko -->
+                <div class="drop-card sold">
+                    <div class="drop-card-image">
+                        <div class="drop-status sold-out">VENDIDO</div>
+                        <img src="images/drop09-ocean.png" alt="Drop #9 - Ocean"
+                            style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="drop-card-info">
+                        <h3>Ocean #9</h3>
+                        <p>Talla XL · Blanco</p>
+                        <span class="drop-price">60€</span>
+                    </div>
+                </div>
+
+                <!-- Drop #8 - Fernando -->
+                <div class="drop-card sold">
+                    <div class="drop-card-image">
+                        <div class="drop-status sold-out">VENDIDO</div>
+                        <img src="images/drop08-fernando.png" alt="Drop #8 - Fernando"
+                            style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="drop-card-info">
+                        <h3>Fernando #8</h3>
+                        <p>Talla XL · Blanco</p>
+                        <span class="drop-price">40€</span>
+                    </div>
+                </div>
+                <!-- Drop #7 Bolsa harry -->
+                <div class="drop-card sold">
+                    <div class="drop-card-image">
+                        <div class="drop-status sold-out">VENDIDO</div>
+                        <img src="images/drop07-bolsaharry.png" alt="Drop #7 - Harry"
+                            style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="drop-card-info">
+                        <h3>Bolsa Harry #7</h3>
+                        <p>Blanco</p>
+                        <span class="drop-price">20€</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="carousel-btn next" id="nextBtn" aria-label="Siguiente">❯</button>
+        </div>
+
+        <div class="gallery-cta">
+            <a href="#contacto" class="btn-outline">Solicitar Drop Personalizado</a>
+        </div>
+    </section>
+
+    <!-- Otras Categorías -->
+    <section class="other-products" id="otros">
+        <div class="other-header">
+            <h2 class="section-title">Otras Creaciones</h2>
+        </div>
+
+        <div class="other-grid">
+            <div class="category-card">
+                <div class="category-icon">
+                    <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                        <rect x="20" y="30" width="40" height="40" rx="5" stroke="currentColor" stroke-width="2.5" />
+                        <circle cx="35" cy="45" r="6" stroke="currentColor" stroke-width="2" />
+                        <circle cx="50" cy="45" r="6" stroke="currentColor" stroke-width="2" />
+                    </svg>
+                </div>
+                <h3>Impresión 3D</h3>
+                <p>Funkos personalizados, soportes y accesorios de baloncesto</p>
+                <a href="3d.html" class="link-arrow">Ver proyectos →</a>
+            </div>
+
+            <div class="category-card">
+                <div class="category-icon">
+                    <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                        <circle cx="40" cy="40" r="15" stroke="currentColor" stroke-width="2.5" />
+                        <path d="M40 25L43 31L49 31L44 35L46 41L40 37L34 41L36 35L31 31L37 31L40 25Z"
+                            fill="currentColor" />
+                    </svg>
+                </div>
+                <h3>Joyería Resina</h3>
+                <p>Anillos, pendientes y collares artesanales de resina 3D</p>
+                <a href="joyeria.html" class="link-arrow">Ver colección →</a>
+            </div>
+
+            <div class="category-card">
+                <div class="category-icon">
+                    <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                        <rect x="15" y="15" width="50" height="50" rx="3" stroke="currentColor" stroke-width="2.5" />
+                        <path d="M25 30L35 45L25 60" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                            stroke-linejoin="round" fill="none" />
+                        <circle cx="50" cy="35" r="6" fill="currentColor" opacity="0.5" />
+                        <rect x="45" y="48" width="15" height="10" fill="currentColor" opacity="0.3" />
+                    </svg>
+                </div>
+                <h3>Cuadros Personalizados</h3>
+                <p>Cuadros y arte decorativo único hecho a medida</p>
+                <a href="cuadros.html" class="link-arrow">Ver galería →</a>
+            </div>
+
+            <div class="category-card">
+                <div class="category-icon">
+                    <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                        <rect x="15" y="20" width="50" height="40" rx="2" stroke="currentColor" stroke-width="2.5" />
+                        <path d="M15 28H65" stroke="currentColor" stroke-width="2.5" />
+                        <path d="M28 38L35 45L28 52" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
+                    </svg>
+                </div>
+                <h3>Desarrollo Web</h3>
+                <p>Sitios modernos y aplicaciones a medida que convierten</p>
+                <a href="portfolio.html" class="link-arrow">Ver portfolio →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-section" id="contacto">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>¿Listo para tu pieza única?</h2>
+                <p>Escríbenos y hagamos realidad tu visión. Respondemos en menos de 24h.</p>
+
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <span class="method-icon">✉</span>
+                        <span>keylabestudio@gmail.com</span>
+                    </div>
+                    <div class="contact-method">
+                        <span class="method-icon">✉</span>
+                        <span>@keylab.es</span>
+                    </div>
+                </div>
+            </div>
+
+            <form class="contact-form">
+                <input type="text" placeholder="Nombre" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Cuéntanos tu idea..." rows="5" required></textarea>
+                <button type="submit" class="btn-primary">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class=" footer-brand">
+                <h3>KEY LAB</h3>
+                <p>Arte único · Hecho a mano con pasión</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="#drops">Drops</a>
+                <a href="3d.html">3D</a>
+                <a href="joyeria.html">Joyería</a>
+                <a href="cuadros.html">Cuadros</a>
+                <a href="portfolio.html">Web</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+
+            <div class="footer-social">
+                <a href="mailto:keylabestudio@gmail.com" class="social-link" aria-label="Email">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="5" width="18" height="14" rx="2" />
+                        <path d="M3 7l9 6 9-6" />
+                    </svg>
+                </a>
+                <a href="https://instagram.com/keylab.es" target="_blank" class="social-link" aria-label="Instagram">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="2" width="20" height="20" rx="5" />
+                        <circle cx="12" cy="12" r="4" />
+                        <circle cx="18" cy="6" r="1" fill="currentColor" />
+                    </svg>
+                </a>
+                <a href="https://instagram.com/pacodelallave_" target="_blank" class="social-link"
+                    aria-label="Instagram">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="2" width="20" height="20" rx="5" />
+                        <circle cx="12" cy="12" r="4" />
+                        <circle cx="18" cy="6" r="1" fill="currentColor" />
+                    </svg>
+                </a>
+                <a href="https://es.linkedin.com/in/francisco-miguel-de-la-llave-pinto" target="_blank"
+                    class="social-link" aria-label="LinkedIn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                        <rect x="2" y="9" width="4" height="12" />
+                        <circle cx="4" cy="4" r="2" fill="currentColor" />
+                    </svg>
+                </a>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Key Lab. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
